@@ -272,7 +272,7 @@ st.write(f"<span style='color:red'>Status: {status_of_current_price}</span>", un
 st.write('US dollar 2-year interest rate:')
 st.write(API_data_2y_rate)
 # Evaluate the status of the current price
-status_of_current_price = evaluate_status(API_data_2y_rate, rates_2023_2y)
+status_of_current_price = evaluate_status(API_data_2y_rate, rates_2014_2023_2y)
 # Print the status
 #st.write('Status:', status_of_current_price)
 st.write(f"<span style='color:red'>Status: {status_of_current_price}</span>", unsafe_allow_html=True)

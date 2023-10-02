@@ -321,7 +321,7 @@ st.pyplot(fig)
 st.header('‍Evolution of the 10-year US Treasuries futures prices')
 
 # Select the time range
-number_10f = st.selectbox('Select the evolution time range in months (10-year Futures)', [1, 3, 6])
+number_10f = st.selectbox('Select the evolution time range in months (10-year Futures)', [6, 3, 1])
 days_10f = int((number_10f / 12) * 252)
 
 fig, ax = plt.subplots()
@@ -337,7 +337,7 @@ st.pyplot(fig)
 st.header('‍Evolution of the US dollar 3-month interest rate')
 
 # Select the time range
-number_3mr = st.selectbox('Select the evolution time range in months (3-month Rate)', [1, 3, 6, 12, 36, 60, 120])
+number_3mr = st.selectbox('Select the evolution time range in months (3-month Rate)', [120, 60, 36, 12, 6, 3, 1])
 days_3mr = int((number_3mr / 12) * 252)
 
 fig, ax = plt.subplots()
@@ -353,7 +353,7 @@ st.pyplot(fig)
 st.header('‍Evolution of the US dollar 10-year interest rate')
 
 # Select the time range
-number_10yr = st.selectbox('Select the evolution time range in months (10-year Rate)', [1, 3, 6, 12, 36, 60, 120])
+number_10yr = st.selectbox('Select the evolution time range in months (10-year Rate)', [120, 60, 36, 12, 6, 3, 1])
 days_10yr = int((number_10yr / 12) * 252)
 
 fig, ax = plt.subplots()
@@ -369,7 +369,7 @@ st.pyplot(fig)
 st.header('‍Evolution of the VIX Index')
 
 # Select the time range
-number_vix = st.selectbox('Select the evolution time range in months (VIX Index)', [1, 3, 6, 12, 36, 60, 120])
+number_vix = st.selectbox('Select the evolution time range in months (VIX Index)', [120, 60, 36, 12, 6, 3, 1])
 days_vix = int((number_vix / 12) * 252)
 
 fig, ax = plt.subplots()
@@ -385,7 +385,7 @@ st.pyplot(fig)
 st.header('‍Evolution of the US dollar 2-year interest rate')
 
 # Select the time range
-number_2yr = st.selectbox('Select the evolution time range in months (2-year Rate)', [1, 3, 6, 12, 36, 60, 120])
+number_2yr = st.selectbox('Select the evolution time range in months (2-year Rate)', [120, 60, 36, 12, 6, 3, 1])
 days_2yr = int((number_2yr / 12) * 252)
 
 fig, ax = plt.subplots()

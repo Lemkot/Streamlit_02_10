@@ -36,7 +36,7 @@ html_temp = """
 st.markdown(html_temp, unsafe_allow_html=True)
 
 with st.expander("What is this app for?"):
-        st.write("This app is used to forcast the financial markers") 
+        st.write("This app is used to display the financial markers") 
 
 
 #----------------------------------------------------------------
@@ -305,7 +305,7 @@ st.write(API_data["10-year German Bund price"])
 st.header('‍Evolution of the S&P 500 index')
 
 # Select the time range
-number_sp = st.selectbox('Select the evolution time range in months (S&P 500)', [1, 3, 6, 12, 36, 60, 120])
+number_sp = st.selectbox('Select the evolution time range in months (S&P 500)', [120, 60, 36, 12, 6, 3, 1])
 days_sp = int((number_sp / 12) * 252)
 
 fig, ax = plt.subplots()
